@@ -10,9 +10,23 @@
 		DE9428BB198749E70049A907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9428BA198749E70049A907 /* AppDelegate.swift */; };
 		DE9428BD198749E70049A907 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9428BC198749E70049A907 /* MasterViewController.swift */; };
 		DE9428BF198749E70049A907 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9428BE198749E70049A907 /* DetailViewController.swift */; };
-		DE9428C2198749E70049A907 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9428C0198749E70049A907 /* Main.storyboard */; };
 		DE9428C4198749E70049A907 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9428C3198749E70049A907 /* Images.xcassets */; };
 		DE9428D0198749E70049A907 /* SwifferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9428CF198749E70049A907 /* SwifferTests.swift */; };
+		DE9428DA19874A330049A907 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9428D919874A330049A907 /* AudioToolbox.framework */; };
+		DE9428DC19874A520049A907 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9428DB19874A520049A907 /* CFNetwork.framework */; };
+		DE9428DE19874A590049A907 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9428DD19874A590049A907 /* CoreGraphics.framework */; };
+		DE9428E019874A5F0049A907 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9428DF19874A5F0049A907 /* CoreLocation.framework */; };
+		DE9428E219874A6B0049A907 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9428E119874A6B0049A907 /* libz.dylib */; };
+		DE9428E419874A750049A907 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9428E319874A750049A907 /* MobileCoreServices.framework */; };
+		DE9428E619874A7C0049A907 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9428E519874A7C0049A907 /* QuartzCore.framework */; };
+		DE9428E819874A830049A907 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9428E719874A830049A907 /* Security.framework */; };
+		DE9428EA19874A8B0049A907 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9428E919874A8B0049A907 /* StoreKit.framework */; };
+		DE9428EC19874A930049A907 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9428EB19874A930049A907 /* SystemConfiguration.framework */; };
+		DEA6128319874EE500B86A9D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA6128219874EE400B86A9D /* Parse.framework */; };
+		DEA61289198752F700B86A9D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA61288198752F700B86A9D /* Storyboard.storyboard */; };
+		DEA6128B1987587500B86A9D /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6128A1987587500B86A9D /* TimelineTableViewController.swift */; };
+		DEA6128D1987592A00B86A9D /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6128C1987592A00B86A9D /* ComposeViewController.swift */; };
+		DEA6128F19875B8A00B86A9D /* SweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6128E19875B8A00B86A9D /* SweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +45,26 @@
 		DE9428BA198749E70049A907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE9428BC198749E70049A907 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		DE9428BE198749E70049A907 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		DE9428C1198749E70049A907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE9428C3198749E70049A907 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DE9428C9198749E70049A907 /* SwifferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9428CE198749E70049A907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE9428CF198749E70049A907 /* SwifferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifferTests.swift; sourceTree = "<group>"; };
+		DE9428D919874A330049A907 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DE9428DB19874A520049A907 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DE9428DD19874A590049A907 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DE9428DF19874A5F0049A907 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DE9428E119874A6B0049A907 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DE9428E319874A750049A907 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DE9428E519874A7C0049A907 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DE9428E719874A830049A907 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DE9428E919874A8B0049A907 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DE9428EB19874A930049A907 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DEA6128219874EE400B86A9D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DEA6128519874F8000B86A9D /* Swiffer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swiffer-Bridging-Header.h"; sourceTree = "<group>"; };
+		DEA61288198752F700B86A9D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		DEA6128A1987587500B86A9D /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		DEA6128C1987592A00B86A9D /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		DEA6128E19875B8A00B86A9D /* SweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +72,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9428EC19874A930049A907 /* SystemConfiguration.framework in Frameworks */,
+				DE9428EA19874A8B0049A907 /* StoreKit.framework in Frameworks */,
+				DE9428E819874A830049A907 /* Security.framework in Frameworks */,
+				DE9428E619874A7C0049A907 /* QuartzCore.framework in Frameworks */,
+				DE9428E419874A750049A907 /* MobileCoreServices.framework in Frameworks */,
+				DE9428E219874A6B0049A907 /* libz.dylib in Frameworks */,
+				DEA6128319874EE500B86A9D /* Parse.framework in Frameworks */,
+				DE9428E019874A5F0049A907 /* CoreLocation.framework in Frameworks */,
+				DE9428DE19874A590049A907 /* CoreGraphics.framework in Frameworks */,
+				DE9428DC19874A520049A907 /* CFNetwork.framework in Frameworks */,
+				DE9428DA19874A330049A907 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +99,7 @@
 		DE9428AC198749E70049A907 = {
 			isa = PBXGroup;
 			children = (
+				DEA6128419874EFC00B86A9D /* Frameworks */,
 				DE9428B7198749E70049A907 /* Swiffer */,
 				DE9428CC198749E70049A907 /* SwifferTests */,
 				DE9428B6198749E70049A907 /* Products */,
@@ -78,9 +119,13 @@
 			isa = PBXGroup;
 			children = (
 				DE9428BA198749E70049A907 /* AppDelegate.swift */,
+				DEA6128A1987587500B86A9D /* TimelineTableViewController.swift */,
+				DEA6128E19875B8A00B86A9D /* SweetTableViewCell.swift */,
+				DEA6128C1987592A00B86A9D /* ComposeViewController.swift */,
+				DEA61288198752F700B86A9D /* Storyboard.storyboard */,
+				DEA6128519874F8000B86A9D /* Swiffer-Bridging-Header.h */,
 				DE9428BC198749E70049A907 /* MasterViewController.swift */,
 				DE9428BE198749E70049A907 /* DetailViewController.swift */,
-				DE9428C0198749E70049A907 /* Main.storyboard */,
 				DE9428C3198749E70049A907 /* Images.xcassets */,
 				DE9428B8198749E70049A907 /* Supporting Files */,
 			);
@@ -110,6 +155,24 @@
 				DE9428CE198749E70049A907 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEA6128419874EFC00B86A9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEA6128219874EE400B86A9D /* Parse.framework */,
+				DE9428EB19874A930049A907 /* SystemConfiguration.framework */,
+				DE9428E919874A8B0049A907 /* StoreKit.framework */,
+				DE9428E719874A830049A907 /* Security.framework */,
+				DE9428E519874A7C0049A907 /* QuartzCore.framework */,
+				DE9428E319874A750049A907 /* MobileCoreServices.framework */,
+				DE9428E119874A6B0049A907 /* libz.dylib */,
+				DE9428DF19874A5F0049A907 /* CoreLocation.framework */,
+				DE9428DD19874A590049A907 /* CoreGraphics.framework */,
+				DE9428DB19874A520049A907 /* CFNetwork.framework */,
+				DE9428D919874A330049A907 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +255,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE9428C2198749E70049A907 /* Main.storyboard in Resources */,
 				DE9428C4198749E70049A907 /* Images.xcassets in Resources */,
+				DEA61289198752F700B86A9D /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA6128D1987592A00B86A9D /* ComposeViewController.swift in Sources */,
 				DE9428BF198749E70049A907 /* DetailViewController.swift in Sources */,
 				DE9428BD198749E70049A907 /* MasterViewController.swift in Sources */,
+				DEA6128B1987587500B86A9D /* TimelineTableViewController.swift in Sources */,
+				DEA6128F19875B8A00B86A9D /* SweetTableViewCell.swift in Sources */,
 				DE9428BB198749E70049A907 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,17 +300,6 @@
 			targetProxy = DE9428CA198749E70049A907 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DE9428C0198749E70049A907 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE9428C1198749E70049A907 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DE9428D1198749E70049A907 /* Debug */ = {
@@ -329,9 +384,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Swiffer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swiffer/Swiffer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -340,9 +402,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Swiffer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swiffer/Swiffer-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -399,6 +467,7 @@
 				DE9428D5198749E70049A907 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE9428D6198749E70049A907 /* Build configuration list for PBXNativeTarget "SwifferTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +476,7 @@
 				DE9428D8198749E70049A907 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
