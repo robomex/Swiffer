@@ -18,13 +18,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qv8-pO-gEO" id="YMF-tL-a6m">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="chI-do-VuU">
-                                            <rect key="frame" x="253" y="7" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="mg2-ag-wqt">
                                             <rect key="frame" x="25" y="39" width="270" height="79"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -33,14 +26,26 @@
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C3W-ob-nBn">
-                                            <rect key="frame" x="25" y="7" width="42" height="21"/>
+                                            <rect key="frame" x="25" y="7" width="143" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="chI-do-VuU">
+                                            <rect key="frame" x="176" y="7" width="119" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="sweetTextView" destination="mg2-ag-wqt" id="qtJ-8r-cKY"/>
+                                    <outlet property="timestampLabel" destination="chI-do-VuU" id="D5o-qM-7yr"/>
+                                    <outlet property="usernameLabel" destination="C3W-ob-nBn" id="MUF-kG-fZP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -49,6 +54,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="D2K-YT-lCw">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="yHK-qf-npD"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fSc-aj-mam">
                             <connections>
                                 <segue destination="Ghs-Pe-MnV" kind="push" id="zfW-zK-iqJ"/>
@@ -58,7 +64,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPs-XE-XQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576" y="274.5333333333333"/>
+            <point key="canvasLocation" x="576" y="274"/>
         </scene>
         <!--Compose View Controller-->
         <scene sceneID="a17-4m-KQz">

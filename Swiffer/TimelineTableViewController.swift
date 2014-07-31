@@ -8,13 +8,39 @@
 
 import UIKit
 
+
 class TimelineTableViewController: UITableViewController {
 
+    var timelineData:NSMutableArray = NSMutableArray()
+    
     init(coder aDecoder: NSCoder!) {
         super.init(coder: aDecoder)
     }
     
+    @IBAction func loadData(){
+        timelineData.removeAllObjects()
+        
+        var findTimelineData:PFQuery = PFQuery(className: "Sweets")
+        
+        findTimelineData.findObjectsInBackgroundWithBlock{
+            (objects:[AnyObject]!, error:NSError!)->Void in
+            
+            if !error{
+                for object in objects{
+                    self.timelineData.addObject(object)
+                }
+                
+                let array:NSArray = self.timelineData.reverseObjectEnumerator().allObjects
+                self.timelineData = array as NSMutableArray
+                
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     override func viewDidAppear(animated: Bool) {
+        self.loadData()
+        
         if (!PFUser.currentUser()) {
             var loginAlert:UIAlertController = UIAlertController(title: "Sign Up / Login", message: "Please sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
             
@@ -100,24 +126,51 @@ class TimelineTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return timelineData.count
     }
 
-    /*
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+    
+    override func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+        let cell:SweetTableViewCell = tableView!.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath!) as SweetTableViewCell
+        
+        let sweet:PFObject = self.timelineData.objectAtIndex(indexPath.row) as PFObject
+        
+        cell.sweetTextView.alpha = 0
+        cell.timestampLabel.alpha = 0
+        cell.usernameLabel.alpha = 0
+        
+        cell.sweetTextView.text = sweet.objectForKey("content") as String
 
-        // Configure the cell...
+        var dataFormatter:NSDateFormatter = NSDateFormatter()
+        dataFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        cell.timestampLabel.text = dataFormatter.stringFromDate(sweet.createdAt)
+        
+        var findSweeter:PFQuery = PFUser.query()
+        findSweeter.whereKey("objectId", equalTo: sweet.objectForKey("sweeter").objectId)
+        
+        findSweeter.findObjectsInBackgroundWithBlock{
+            (objects:[AnyObject]!, error:NSError!)->Void in
+            if !error{
+                let user:PFUser = (objects as NSArray).lastObject as PFUser
+                cell.usernameLabel.text = user.username
+                
+                UIView.animateWithDuration(0.5, animations: {
+                    cell.sweetTextView.alpha = 1
+                    cell.timestampLabel.alpha = 1
+                    cell.usernameLabel.alpha = 1
+                })
+            }
+        }
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
