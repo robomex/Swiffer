@@ -19,7 +19,13 @@ class ComposeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        sweetTextView.layer.borderColor = UIColor.blackColor().CGColor
+        sweetTextView.layer.borderWidth = 0.5
+        sweetTextView.layer.cornerRadius = 5
+        
+        sweetTextView.becomeFirstResponder()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -29,6 +35,15 @@ class ComposeViewController: UIViewController {
     }
     
     @IBAction func sendSweet(sender: AnyObject) {
+        
+        var sweet:PFObject = PFObject(className: "Sweets")
+        sweet["content"] = sweetTextView.text
+        sweet["sweeter"] = PFUser.currentUser()
+        
+        sweet.saveInBackground()
+        
+        self.navigationController.popToRootViewControllerAnimated(true)
+        
     }
 
     /*
